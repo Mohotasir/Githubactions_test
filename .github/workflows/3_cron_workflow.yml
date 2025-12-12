@@ -1,0 +1,16 @@
+
+name: cron workflow # this is the name of the workflow
+
+on: 
+  schedule: # trigger the workflow on a schedule
+    - cron: '*/3 0 * * *' # runs every day at midnight UTC
+jobs:
+  build: # this is the job name
+    runs-on: ubuntu-latest # specify the runner environment
+
+    steps: 
+    - name: cron workflow step
+      run: |
+       echo "Hello, world!"
+       echo "This is my first GitHub Actions cron workflow."
+    

@@ -1,0 +1,16 @@
+
+name: manual workflow # this is the name of the workflow
+
+on: 
+  workflow_dispatch: # trigger the workflow manually
+
+jobs:
+  build: # this is the job name
+    runs-on: ubuntu-latest # specify the runner environment
+
+    steps: 
+    - name: first step
+      run: |
+       echo "Hello, world!"
+       echo "This is my first GitHub Actions workflow."
+    

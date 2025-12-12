@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest # specify the runner environment
 
     steps: 
-    - names: first step
+    - name: first step
       run: |
-       echo Hello, world!
-       echo This is my first GitHub Actions workflow.
+       echo "Hello, world!"
+       echo "This is my first GitHub Actions workflow."
     

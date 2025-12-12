@@ -7,19 +7,17 @@ on:
       - main
 
 jobs:
-  first workflow job:
+  first-workflow-job:
     runs-on: ubuntu-latest # specify the runner environment
 
     steps: 
     - name: first step
       run: |
-       echo "Hello, world!"
        echo "This is job 1."
-  second workflow job:
+  second-workflow-job:
     runs-on: ubuntu-latest # specify the runner environment
     steps: 
     - name: first step
       run: |
-       echo "Hello, world!"
-       echo "This is job 1."
+       echo "This is job 2."
     

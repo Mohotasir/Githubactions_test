@@ -1,0 +1,16 @@
+Name: conditional workflow # this is the name of the workflow
+
+on:
+  push:
+    paths:
+      -'backend/**'
+
+jobs:
+  conditional-job:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: conditional workflow step
+      run: |
+       echo "Hello, world!"
+       echo "This workflow runs only when files in the backend/ directory are changed."
